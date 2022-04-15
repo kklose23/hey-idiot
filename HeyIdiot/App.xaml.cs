@@ -12,8 +12,10 @@ namespace HeyIdiot
         public App()
         {
             InitializeComponent();
-
+            
             DependencyService.Register<MockDataStore>();
+            DependencyService.Register<WordDataStore>();
+
             MainPage = new AppShell();
         }
 

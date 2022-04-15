@@ -13,6 +13,7 @@ namespace HeyIdiot.ViewModels
     public class BaseViewModel : INotifyPropertyChanged
     {
         public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
+        public IWordDataStore WordDataStore => DependencyService.Get<IWordDataStore>();
 
         bool isBusy = false;
         public bool IsBusy
