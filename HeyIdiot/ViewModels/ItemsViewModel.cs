@@ -7,6 +7,7 @@ using Xamarin.Forms;
 
 using HeyIdiot.Models;
 using HeyIdiot.Views;
+using HeyIdiot.Helpers;
 
 namespace HeyIdiot.ViewModels
 {
@@ -77,9 +78,11 @@ namespace HeyIdiot.ViewModels
         async void OnItemSelected(Item item)
         {
             if (item == null)
-                return;
+            {
+              return;
+            }
 
-            await Shell.Current.GoToAsync($"{nameof(WordDetailPage)}?{nameof(WordDetailViewModel.Name)}=idiot");
+            await Shell.Current.GoToAsync(RouteHelper.GetWordDetailRoute(wordName: "idiot"));
         }
     }
 }
