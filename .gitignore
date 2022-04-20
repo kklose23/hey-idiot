@@ -403,3 +403,8 @@ ASALocalRun/
 
 # Local History for Visual Studio
 .localhistory/
+
+
+
+*.AssemblyReference.cache
+HeyIdiot.Android/Resources/Resource.designer.cs

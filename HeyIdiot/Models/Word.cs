@@ -1,14 +1,15 @@
-﻿using System;
+﻿using System.Collections.Generic;
+
 namespace HeyIdiot.Models
 {
-    public class Word
+  public class Word
+  {
+    public Word()
     {
-        public Word()
-        {
-        }
-
-        public string Name { get; set; }
-
-        public string Definition { get; set; }
     }
+
+    public string Name { get; set; }
+
+    public List<string> Definitions { get; set; }
+  }
 }
