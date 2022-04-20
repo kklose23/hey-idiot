@@ -4,6 +4,44 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="HeyIdiot.Views.HomePage">
     <ContentPage.Content>
-        
+        <StackLayout Margin="20">
+            <Label Text="HEY, IDIOT!"
+                   FontSize="Title"
+               BackgroundColor="MediumAquamarine" 
+            HorizontalOptions="Center" />
+            <SearchBar Placeholder="    Search for something, idiot  " />
+            
+            
+            <Frame BorderColor="Black"
+               Padding="100">
+                <StackLayout Orientation="Horizontal"
+                         Spacing="15">
+                    <BoxView Color="Red" />
+                    <Label Text="Word of the Day:"
+                       FontSize="Small"
+                       VerticalOptions="Start" />
+                </StackLayout>
+            </Frame>
+            <Frame BorderColor="Black"
+               Padding="50">
+                <StackLayout Orientation="Horizontal"
+                         Spacing="15">
+                    <BoxView Color="Yellow" />
+                    <Label Text="Recent Activity"
+                       FontSize="Large"
+                       VerticalOptions="Center" />
+                </StackLayout>
+            </Frame>
+            <Frame BorderColor="Black"
+               Padding="50">
+                <StackLayout Orientation="Horizontal"
+                         Spacing="15">
+                    <BoxView Color="Blue" />
+                    <Label Text="Currently reading"
+                       FontSize="Large"
+                       VerticalOptions="Center" />
+                </StackLayout>
+            </Frame>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
